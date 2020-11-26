@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Região Norte"
+  },
+  {
+    "id": 2,
+    "name": "Região Nordeste"
+  },
+  {
+    "id": 3,
+    "name": "Região Sudeste"
+  },
+  {
+    "id": 4,
+    "name": "Região Sul"
+  },
+  {
+    "id": 5,
+    "name": "Região Centro-Oeste"
+  }
+]

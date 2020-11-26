@@ -1,0 +1,164 @@
+[
+  {
+    "id": 3,
+    "name": "Rondônia",
+    "initials": "RO",
+    "regionId": 1
+  },
+  {
+    "id": 4,
+    "name": "Acre",
+    "initials": "AC",
+    "regionId": 1
+  },
+  {
+    "id": 5,
+    "name": "Amazonas",
+    "initials": "AM",
+    "regionId": 1
+  },
+  {
+    "id": 6,
+    "name": "Roraima",
+    "initials": "RR",
+    "regionId": 1
+  },
+  {
+    "id": 7,
+    "name": "Pará",
+    "initials": "PA",
+    "regionId": 1
+  },
+  {
+    "id": 8,
+    "name": "Amapá",
+    "initials": "AP",
+    "regionId": 1
+  },
+  {
+    "id": 9,
+    "name": "Tocantins",
+    "initials": "TO",
+    "regionId": 1
+  },
+  {
+    "id": 10,
+    "name": "Maranhão",
+    "initials": "MA",
+    "regionId": 2
+  },
+  {
+    "id": 11,
+    "name": "Piauí",
+    "initials": "PI",
+    "regionId": 2
+  },
+  {
+    "id": 12,
+    "name": "Ceará",
+    "initials": "CE",
+    "regionId": 2
+  },
+  {
+    "id": 13,
+    "name": "Rio Grande do Norte",
+    "initials": "RN",
+    "regionId": 2
+  },
+  {
+    "id": 14,
+    "name": "Paraíba",
+    "initials": "PB",
+    "regionId": 2
+  },
+  {
+    "id": 15,
+    "name": "Pernambuco",
+    "initials": "PE",
+    "regionId": 2
+  },
+  {
+    "id": 16,
+    "name": "Alagoas",
+    "initials": "AL",
+    "regionId": 2
+  },
+  {
+    "id": 17,
+    "name": "Sergipe",
+    "initials": "SE",
+    "regionId": 2
+  },
+  {
+    "id": 18,
+    "name": "Bahia",
+    "initials": "BA",
+    "regionId": 2
+  },
+  {
+    "id": 19,
+    "name": "Minas Gerais",
+    "initials": "MG",
+    "regionId": 3
+  },
+  {
+    "id": 20,
+    "name": "Espírito Santo",
+    "initials": "ES",
+    "regionId": 3
+  },
+  {
+    "id": 21,
+    "name": "Rio de Janeiro",
+    "initials": "RJ",
+    "regionId": 3
+  },
+  {
+    "id": 22,
+    "name": "São Paulo",
+    "initials": "SP",
+    "regionId": 3
+  },
+  {
+    "id": 23,
+    "name": "Paraná",
+    "initials": "PR",
+    "regionId": 4
+  },
+  {
+    "id": 24,
+    "name": "Santa Catarina",
+    "initials": "SC",
+    "regionId": 4
+  },
+  {
+    "id": 25,
+    "name": "Rio Grande do Sul",
+    "initials": "RS",
+    "regionId": 4
+  },
+  {
+    "id": 26,
+    "name": "Mato Grosso do Sul",
+    "initials": "MS",
+    "regionId": 5
+  },
+  {
+    "id": 27,
+    "name": "Mato Grosso",
+    "initials": "MT",
+    "regionId": 5
+  },
+  {
+    "id": 28,
+    "name": "Goiás",
+    "initials": "GO",
+    "regionId": 5
+  },
+  {
+    "id": 29,
+    "name": "Distrito Federal",
+    "initials": "DF",
+    "regionId": 5
+  }
+]
