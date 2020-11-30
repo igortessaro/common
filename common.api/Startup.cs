@@ -40,6 +40,14 @@ namespace common.api
 
             app.UseHttpsRedirection();
             app.UseRouting();
+
+            app.UseCors(c =>
+            {
+                c.AllowAnyOrigin();
+                c.AllowAnyMethod();
+                c.AllowAnyHeader();
+            });
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
