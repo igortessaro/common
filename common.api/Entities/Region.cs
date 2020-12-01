@@ -2,8 +2,9 @@
 {
     public sealed class Region
     {
-        public Region(string name)
+        public Region(int id, string name)
         {
+            this.Id = id;
             this.Name = name;
         }
 

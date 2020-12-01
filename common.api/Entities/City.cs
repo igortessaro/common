@@ -2,8 +2,9 @@
 {
     public sealed class City
     {
-        public City(string name, int stateId)
+        public City(int id, string name, int stateId)
         {
+            this.Id = id;
             this.Name = name;
             this.StateId = stateId;
         }

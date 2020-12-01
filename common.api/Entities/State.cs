@@ -2,8 +2,9 @@
 {
     public sealed class State
     {
-        public State(string name, string initials, int regionId)
+        public State(int id, string name, string initials, int regionId)
         {
+            this.Id = id;
             this.Name = name;
             this.Initials = initials;
             this.RegionId = regionId;
