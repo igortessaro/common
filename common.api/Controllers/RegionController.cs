@@ -23,5 +23,8 @@ namespace common.api.Controllers
 
         [HttpGet("{id}")]
         public Region Get(int id) => _defaultDbContext.Regions.Find(id);
+
+        [HttpGet("{id}/states")]
+        public IAsyncEnumerable<State> GetByRegion(int id) => _defaultDbContext.States.Where(x => x.RegionId == id).OrderBy(x => x.Name).AsAsyncEnumerable();
     }
 }

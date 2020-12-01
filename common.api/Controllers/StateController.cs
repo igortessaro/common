@@ -21,10 +21,11 @@ namespace common.api.Controllers
         [HttpGet]
         public IAsyncEnumerable<State> GetAll() => _defaultDbContext.States.OrderBy(x => x.Name).AsAsyncEnumerable();
 
-        [HttpGet("region/{regionId}")]
-        public IAsyncEnumerable<State> GetByRegion(int regionId) => _defaultDbContext.States.Where(x => x.RegionId == regionId).OrderBy(x => x.Name).AsAsyncEnumerable();
-
         [HttpGet("{id}")]
         public State Get(int id) => _defaultDbContext.States.Find(id);
+
+
+        [HttpGet("{id}/cities")]
+        public IAsyncEnumerable<City> GetByState(int id) => _defaultDbContext.Cities.Where(x => x.StateId == id).OrderBy(x => x.Name).AsAsyncEnumerable();
     }
 }

@@ -21,9 +21,6 @@ namespace common.api.Controllers
         [HttpGet]
         public IAsyncEnumerable<City> GetAll() => _defaultDbContext.Cities.OrderBy(x => x.Name).AsAsyncEnumerable();
 
-        [HttpGet("state/{stateId}")]
-        public IAsyncEnumerable<City> GetByState(int stateId) => _defaultDbContext.Cities.Where(x => x.StateId == stateId).OrderBy(x => x.Name).AsAsyncEnumerable();
-
         [HttpGet("{id}")]
         public City Get(int id) => _defaultDbContext.Cities.Find(id);
     }
