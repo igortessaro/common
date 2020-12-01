@@ -1,6 +1,8 @@
 ﻿using common.api.Entities;
 using common.api.Repository;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace common.api.Controllers
@@ -17,15 +19,9 @@ namespace common.api.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAll()
-        {
-            return Ok(_defaultDbContext.Regions.ToList());
-        }
+        public IAsyncEnumerable<Region> GetAll() => _defaultDbContext.Regions.OrderBy(x => x.Name).AsAsyncEnumerable();
 
         [HttpGet("{id}")]
-        public Region Get(int id)
-        {
-            return _defaultDbContext.Regions.Find(id);
-        }
+        public Region Get(int id) => _defaultDbContext.Regions.Find(id);
     }
 }

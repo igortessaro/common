@@ -1,6 +1,8 @@
 ﻿using common.api.Entities;
 using common.api.Repository;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace common.api.Controllers
@@ -17,23 +19,12 @@ namespace common.api.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAll()
-        {
-            return Ok(_defaultDbContext.Cities.ToList());
-        }
+        public IAsyncEnumerable<City> GetAll() => _defaultDbContext.Cities.OrderBy(x => x.Name).AsAsyncEnumerable();
 
         [HttpGet("state/{stateId}")]
-        public IActionResult GetByState(int stateId)
-        {
-            var result = _defaultDbContext.Cities.Where(x => x.StateId == stateId).ToList();
-
-            return Ok(result);
-        }
+        public IAsyncEnumerable<City> GetByState(int stateId) => _defaultDbContext.Cities.Where(x => x.StateId == stateId).OrderBy(x => x.Name).AsAsyncEnumerable();
 
         [HttpGet("{id}")]
-        public City Get(int id)
-        {
-            return _defaultDbContext.Cities.Find(id);
-        }
+        public City Get(int id) => _defaultDbContext.Cities.Find(id);
     }
 }
